@@ -10,6 +10,9 @@ python = "^3.8"
 [tool.poetry.dev-dependencies]
 pytest = "*"
 
+# Use a local path for easier test/development of the testscribe tool itself.
+testscribe = { path = "../testscribe/", develop = true }
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
