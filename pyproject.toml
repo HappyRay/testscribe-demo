@@ -8,11 +8,13 @@ authors = ["Ray Yang <ruiguo@gmail.com>"]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-pytest = "*"
 testscribe = "*"
-
 # Use a local path for easier test/development of the testscribe tool itself.
 #testscribe = { path = "../testscribe/", develop = true }
+
+pytest = "*"
+# to get color output
+rich = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
