@@ -1,0 +1,35 @@
+format_version: 1
+module: testscribe_test.prime
+tests:
+- name: test_is_prime_not_prime_1
+  short_name: _not_prime
+  target:
+    name: is_prime
+  parameters:
+  - name: n
+    value: 15
+  result: false
+- name: test_is_prime_2_is_prime
+  short_name: _2_is_prime
+  target:
+    name: is_prime
+  parameters:
+  - name: n
+    value: 2
+  result: true
+- name: test_is_prime_not_prime
+  short_name: _not_prime
+  target:
+    name: is_prime
+  parameters:
+  - name: n
+    value: 4
+  result: false
+- name: test_is_prime_is_prime
+  short_name: _is_prime
+  target:
+    name: is_prime
+  parameters:
+  - name: n
+    value: 3
+  result: true
