@@ -1,3 +1,7 @@
+"""
+Mock a dependency passed in as a parameter
+"""
+
 import json
 
 from tsdemo.service import Service
