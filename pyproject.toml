@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "testscribe-test"
+name = "testscribe-demo"
 version = "0.1.0"
-description = "Test the TestScribe tool"
+description = "Demo the TestScribe tool"
 authors = ["Ray Yang <ruiguo@gmail.com>"]
 
 [tool.poetry.dependencies]
