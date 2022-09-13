@@ -1,5 +1,5 @@
 format_version: 1
-module: testscribe_test.calculator
+module: tsdemo.calculator
 tests:
 - name: test_add
   short_name: _

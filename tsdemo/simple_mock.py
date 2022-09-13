@@ -1,6 +1,6 @@
 import json
 
-from testscribe_test.service import Service
+from tsdemo.service import Service
 
 
 def search_name(service: Service, keyword: str):

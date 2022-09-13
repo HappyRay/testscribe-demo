@@ -1,3 +1,10 @@
+# When launched with the wrapper testscribe script, the working directory is where the script is.
+# That directory is added to the python path, not the current directory.
+# Add the current directory explicitly.
+python-paths:
+  - .
+  - tests
+
 output-root-dir: tests/generated
 
 setup-function: setup.setup

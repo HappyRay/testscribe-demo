@@ -1,4 +1,4 @@
-from testscribe_test.person import Person
+from tsdemo.person import Person
 
 
 class Service:

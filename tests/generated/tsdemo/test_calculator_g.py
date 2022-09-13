@@ -1,4 +1,4 @@
-from testscribe_test.calculator import add
+from tsdemo.calculator import add
 
 
 def test_add():

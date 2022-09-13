@@ -1,5 +1,5 @@
 format_version: 1
-module: testscribe_test.prime
+module: tsdemo.prime
 tests:
 - name: test_is_prime_not_prime_1
   short_name: _not_prime

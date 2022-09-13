@@ -1,4 +1,4 @@
-from testscribe_test.prime import is_prime
+from tsdemo.prime import is_prime
 
 
 def test_is_prime_not_prime_1():

@@ -1,4 +1,4 @@
-from testscribe_test import __version__
+from tsdemo import __version__
 
 
 def test_version():

@@ -1,6 +1,6 @@
 import json
 
-from testscribe_test.service import Service
+from tsdemo.service import Service
 
 
 def gen_name(service: Service, keyword: str, start_number: int):

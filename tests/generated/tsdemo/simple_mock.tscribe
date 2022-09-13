@@ -1,5 +1,5 @@
 format_version: 1
-module: testscribe_test.simple_mock
+module: tsdemo.simple_mock
 tests:
 - name: test_search_name
   short_name: _
@@ -13,7 +13,7 @@ tests:
   result: '{"name": "real Bob"}'
   mocks:
   - name: m_service
-    spec: testscribe_test.service.Service
+    spec: tsdemo.service.Service
     calls:
     - name: search_a_name
       parameters:
