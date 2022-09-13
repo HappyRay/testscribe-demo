@@ -1,0 +1,22 @@
+format_version: 1
+module: testscribe_test.simple_mock
+tests:
+- name: test_search_name
+  short_name: _
+  target:
+    name: search_name
+  parameters:
+  - name: service
+    value: !testscribe/mock 'm_service'
+  - name: keyword
+    value: Bob
+  result: '{"name": "real Bob"}'
+  mocks:
+  - name: m_service
+    spec: testscribe_test.service.Service
+    calls:
+    - name: search_a_name
+      parameters:
+      - name: keyword
+        value: 'key: Bob'
+      return: real Bob
