@@ -1,0 +1,11 @@
+format_version: 1
+module: tsdemo.create_object
+tests:
+- name: test_get_person_age
+  short_name: _
+  target:
+    name: get_person_age
+  parameters:
+  - name: p
+    value: !testscribe/expression 'tsdemo.person.Person("Bob", 10)'
+  result: 10
