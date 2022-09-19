@@ -1,6 +1,25 @@
 format_version: 1
 module: tsdemo.objects_in_list
 tests:
+- name: test_get_average_age_1
+  short_name: _
+  target:
+    name: get_average_age
+  parameters:
+  - name: person_list
+    value:
+    - !testscribe/mock 'm_person'
+    - !testscribe/mock 'm_person_1'
+  result: 2
+  mocks:
+  - name: m_person
+    spec: tsdemo.person.Person
+    attributes:
+      age: 2
+  - name: m_person_1
+    spec: tsdemo.person.Person
+    attributes:
+      age: 3
 - name: test_get_average_age
   short_name: _
   target:
