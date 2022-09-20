@@ -1,6 +1,27 @@
 format_version: 1
 module: tsdemo.simple_mock
 tests:
+- name: test_search_name_exception_is_propagated
+  short_name: _exception_is_propagated
+  target:
+    name: search_name
+  parameters:
+  - name: service
+    value: !testscribe/mock 'm_service'
+  - name: keyword
+    value: Bob
+  exception:
+    type: Exception
+    message: search failed
+  mocks:
+  - name: m_service
+    spec: tsdemo.service.Service
+    calls:
+    - name: search_a_name
+      parameters:
+      - name: keyword
+        value: 'key: Bob'
+      return: !testscribe/expression 'throw(Exception("search failed"))'
 - name: test_search_name
   short_name: _
   target:
