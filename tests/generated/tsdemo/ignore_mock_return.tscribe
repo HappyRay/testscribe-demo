@@ -1,0 +1,22 @@
+format_version: 1
+module: tsdemo.ignore_mock_return
+tests:
+- name: test_show
+  short_name: _
+  target:
+    name: show
+  parameters:
+  - name: text
+    value: a
+  - name: printer
+    value: !testscribe/mock 'm_printer'
+  result: null
+  mocks:
+  - name: m_printer
+    spec: tsdemo.ignore_mock_return.Printer
+    calls:
+    - name: display
+      parameters:
+      - name: text
+        value: a
+      return: !testscribe/expression 'ignore'
