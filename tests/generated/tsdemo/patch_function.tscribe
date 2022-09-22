@@ -1,0 +1,22 @@
+format_version: 1
+module: tsdemo.patch_function
+tests:
+- name: test_call_fixed_func
+  short_name: _
+  target:
+    name: call_fixed_func
+  parameters:
+  - name: num
+    value: 2
+  result: 1
+  patches:
+  - target: tsdemo.patch_function.calculate
+    replacement: !testscribe/mock 'm_calculate'
+  mocks:
+  - name: m_calculate
+    spec: tsdemo.patch_function.calculate
+    calls:
+    - parameters:
+      - name: seed
+        value: 2
+      return: 1
