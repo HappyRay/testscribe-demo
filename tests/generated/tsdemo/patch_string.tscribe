@@ -1,0 +1,12 @@
+format_version: 1
+module: tsdemo.patch_string
+tests:
+- name: test_get_db_name
+  short_name: _
+  target:
+    name: get_db_name
+  parameters: []
+  result: test
+  patches:
+  - target: tsdemo.patch_string.DB_NAME
+    replacement: test
