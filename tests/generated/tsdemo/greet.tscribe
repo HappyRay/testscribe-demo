@@ -1,0 +1,15 @@
+format_version: 1
+module: tsdemo.greet
+tests:
+- name: test_greet
+  short_name: _
+  target:
+    name: greet
+    class_name: Greeter
+  init_parameters:
+  - name: my_name
+    value: Bob
+  parameters:
+  - name: to
+    value: Alice
+  result: Hello Alice. My name is Bob
