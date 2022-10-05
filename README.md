@@ -1,6 +1,6 @@
-# Test TestScribe
+# TestScribe Demo
 
-Tests for the TestScribe tool.
+Demo for the TestScribe tool.
 
 # License
 
