@@ -1,0 +1,17 @@
+format_version: 1
+module: tsdemo.annotate_field_type
+tests:
+- name: test_get_car_info
+  short_name: _
+  target:
+    name: get_car_info
+  parameters:
+  - name: car
+    value: !testscribe/mock 'm_car'
+  result: 'Car model: camery, owner: Bob'
+  mocks:
+  - name: m_car
+    spec: tsdemo.annotate_field_type.Car
+    attributes:
+      model: camery
+      owner: Bob
