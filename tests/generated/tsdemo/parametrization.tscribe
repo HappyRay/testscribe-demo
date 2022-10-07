@@ -1,0 +1,27 @@
+format_version: 1
+module: tsdemo.parametrization
+tests:
+- name: test_eval_expression_multiplication
+  short_name: _multiplication
+  target:
+    name: eval_expression
+  parameters:
+  - name: expr
+    value: 6 * 9
+  result: 54
+- name: test_eval_expression_addition_1
+  short_name: _addition
+  target:
+    name: eval_expression
+  parameters:
+  - name: expr
+    value: 2 + 4
+  result: 6
+- name: test_eval_expression_addition
+  short_name: _addition
+  target:
+    name: eval_expression
+  parameters:
+  - name: expr
+    value: 3 + 5
+  result: 8
