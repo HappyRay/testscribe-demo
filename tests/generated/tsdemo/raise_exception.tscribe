@@ -1,0 +1,11 @@
+format_version: 1
+module: tsdemo.raise_exception
+tests:
+- name: test_always_raise_exception
+  short_name: _
+  target:
+    name: always_raise_exception
+  parameters: []
+  exception:
+    type: Exception
+    message: test exception
