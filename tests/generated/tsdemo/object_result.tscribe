@@ -5,11 +5,7 @@ tests:
   short_name: _
   target:
     name: create_simple_class_instance
-  parameters:
-  - name: s
-    value: a
-  - name: i
-    value: 1
+  parameters: []
   result: !testscribe/object
     type: tsdemo.object_result.SimpleClass
     members:

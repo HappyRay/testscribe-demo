@@ -14,5 +14,5 @@ class SimpleClass:
         self.int_field = i
 
 
-def create_simple_class_instance(s: str, i: int):
-    return SimpleClass(s=s, i=i)
+def create_simple_class_instance():
+    return SimpleClass(s="a", i=1)
