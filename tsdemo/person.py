@@ -3,5 +3,5 @@ from attr import dataclass
 
 @dataclass
 class Person:
-    name: str = ""
-    age: int = 10
+    name: str
+    age: int
