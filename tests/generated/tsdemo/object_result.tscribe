@@ -1,0 +1,17 @@
+format_version: 1
+module: tsdemo.object_result
+tests:
+- name: test_create_simple_class_instance
+  short_name: _
+  target:
+    name: create_simple_class_instance
+  parameters:
+  - name: s
+    value: a
+  - name: i
+    value: 1
+  result: !testscribe/object
+    type: tsdemo.object_result.SimpleClass
+    members:
+      str_field: a
+      int_field: 1
