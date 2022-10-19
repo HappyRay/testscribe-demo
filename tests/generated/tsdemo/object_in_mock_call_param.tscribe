@@ -1,0 +1,21 @@
+format_version: 1
+module: tsdemo.object_in_mock_call_param
+tests:
+- name: test_call_b_method
+  short_name: _
+  target:
+    name: call_b_method
+  parameters:
+  - name: b
+    value: !testscribe/mock 'm_b'
+  result: null
+  mocks:
+  - name: m_b
+    spec: tsdemo.object_in_mock_call_param.B
+    calls:
+    - name: do
+      parameters:
+      - name: a
+        value: !testscribe/object
+          type: tsdemo.object_in_mock_call_param.A
+          repr: A(i=1)
