@@ -1,3 +1,6 @@
+# vscode
+.history/
+
 # intellij
 .idea/
 *.iml
