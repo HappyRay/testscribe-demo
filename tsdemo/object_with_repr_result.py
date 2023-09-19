@@ -3,7 +3,7 @@ Results that contain class instances.
 The class implements a custom __repr__ method.
 The result display and generated assertions will be based on the repr() result.
 """
-from attr import dataclass
+from dataclasses import dataclass
 
 
 @dataclass
