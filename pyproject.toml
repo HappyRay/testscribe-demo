@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "testscribe-demo"
+name = "tsdemo"
 version = "0.1.0"
 description = "Demo the TestScribe tool"
 authors = ["Ray Yang <ruiguo@gmail.com>"]

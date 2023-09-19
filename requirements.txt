@@ -1,0 +1,3 @@
+testscribe
+pytest
+rich
