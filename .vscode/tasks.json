@@ -5,8 +5,9 @@
     "tasks": [
         {
             "label": "Create TestScribe tests",
-            "type": "shell",
-            "command": "${command:python.interpreterPath} -m testscribe create ${file} ${selectedText}",
+            "type": "process",
+            "command": ".venv\\Scripts\\python.exe",
+            "args": ["-m", "testscribe", "create", "${file}", "${selectedText}"], 
             "group": {
                 "kind": "test"
             },
